@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-string namaGlobal = "Ilmu";
+string namaGlobal = "Ilmu"; // Deklarasi variabel global
 
-void namaVariabel() {
-    string namaLokal = "Komputer";
+void namaVariabel() { //fungsi yang menggunakan variabel lokal dan global
+    string namaLokal = "Komputer"; // variabel lokal hanya bisa diakses dalam fungsi ini
 
     // coba akses
     cout << namaLokal << endl;
@@ -14,12 +14,12 @@ void namaVariabel() {
 }
 
 int main () {
-    namaVariabel();
+    namaVariabel(); // memanggil fungsi untuk menjalankan isi dari namaVariabel()
 
     // coba akses
     cout << namaGlobal << endl;
 
     // coba akses
-    // cout << namaLokal << endl; // ga iso
+    // cout << namaLokal << endl; // ERROR: namaLokal tidak dikenali di sini
 
 }
