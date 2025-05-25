@@ -1,13 +1,13 @@
 #include <iostream>  // header untuk C++
 #include <conio.h> // header untuk fungsi getch() dan getche()
-using namespace std;
+using namespace std; // biar nggak perlu lagi buat std:: disetiap fungsinya
 
 int main() {
     
-    string nama;
-    char kom, jenisKelamin;
-    int nim;
-    float ip;
+    string nama; // variabel untuk menyimpan nama
+    char kom, jenisKelamin; // variabel untuk menyimpan kom dan jenis kelamin
+    int nim; // variabel untuk menyimpan nim
+    float ip; // variabel untuk menyimpan ip
 
     /*ini untuk komen 
     beberapa baris*/
@@ -16,7 +16,7 @@ int main() {
 
     cout << "Masukkan nama Anda : ";
     // cin >> nama;
-    getline(cin, nama); // agar karakter spasi bisa terbaca
+    getline(cin, nama); // agar membaca inputan nama lengkap termasuk spasi
 
     cout << "Masukkan KOM : ";
     cin >> kom;
@@ -28,7 +28,7 @@ int main() {
     cin >> ip;
 
     cout << "Masukkan jenis kelamin (L/P) :  ";
-    jenisKelamin = getche(); // agar karakter langsg tampil, tanpa tekan enter
+    jenisKelamin = getche(); // agar karakter langsung tampil, tanpa tekan enter
 
     /*Untuk Output*/
     cout << "\n" << nama << endl;
@@ -37,5 +37,5 @@ int main() {
     cout << ip << endl;
     putchar(jenisKelamin); // untuk menampilkan karakter
 
-    getch(); // karakter yang diketik ga di tampilkan di layar
+    getch(); // karakter yang diketik tidak di tampilkan di layar
 }
