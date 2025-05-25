@@ -1,6 +1,6 @@
 #include <iostream>  // header untuk C++
 #include <conio.h> // header untuk fungsi getch() dan getche()
-using namespace std; // biar nggak perlu lagi buat std:: disetiap fungsinya
+using namespace std; // biar nggak perlu lagi buat std:: sebelum cout/cin
 
 int main() {
     
