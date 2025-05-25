@@ -11,7 +11,7 @@ int tambah(int a, int b) {
     return a + b;
 }
 
-// fungsi overload
+// fungsi overload, dua fungsi bernama sama tapi parameter berbeda
 int kali(int a, int b) {
     return a * b;
 }
@@ -20,7 +20,7 @@ double kali(double a, double b) {
     return a * b;
 }
 
-// fungsi rekursif
+// fungsi rekursif, menghitung faktorial dari suatu bilangan
 int faktorial(int n) {
     if (n == 0 || n == 1) {
         return 1;
