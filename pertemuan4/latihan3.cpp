@@ -3,7 +3,9 @@ using namespace std;
 
 int main() {
     string password, sandi, expected = "";
-
+    // password: input pertama 
+    // sandi: input kedua (yang akan dicek kebenarannya)
+    // expected: string yang akan dibentuk berdasarkan pola
     cout << "Masukkan kata sandi : ";
     cin >> password;
 
@@ -12,7 +14,7 @@ int main() {
 
     // Membuat string "expected" berdasarkan pola tertentu
     for (int i = 0; i < password.length(); i++) {
-        expected += password.substr(0, i + 1);
+        expected += password.substr(0, i + 1); // substr(0, i+1) mengambil karakter dari index 0 sebanyak (i+1) karakter
     }
 
     // Mengecek apakah input kedua sesuai dengan pola yang diharapkan
@@ -22,5 +24,5 @@ int main() {
         cout << "Tulisan agen salah" << endl;
     }
 
-    return 0;
+    return 0; // mengakhiri program
 }
