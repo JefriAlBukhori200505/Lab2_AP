@@ -1,6 +1,6 @@
 #include <iostream>
-#include <string>
-#include <array>
+#include <string> // untuk menggunakan tipe data string
+#include <array> // untuk menggunakan library array dari STL (Standard Template Library)
 using namespace std;
 
 int main () {
@@ -20,26 +20,26 @@ int main () {
     // string nama[5] = {"jefri", "aida", "kiki", "jasmin", "dita"};
     // string nama[] = {"jefri", "aida", "kiki", "jasmin", "dita"};
 
-    // Ascending Element in Array
+    // Ascending Element in Array, menampilkan elemen array secara manual
     // cout << nama[0] << endl;
     // cout << nama[1] << endl;
     // cout << nama[2] << endl;
     // cout << nama[3] << endl;
     // cout << nama[4] << endl;
 
-    // Menggunakan Looping
+    // Menggunakan Looping, menampilkan array dengan perulangan
     // for(int i = 0; i < 5; i++) {
     //     cout << nama[i] << endl;
     // }
 
-    // Descending element in array use looping
+    // Descending element in array use looping, menampilkan array dari belakang ke depan
     // for (int i = 4; i >= 0; i--) {
     //     cout << nama[i] << endl;
     // }
 
 
 
-    // Multidimensional Array
+    // Multidimensional Array,  untuk menyimpan data dalam bentuk baris dan kolom
     // 1 3 5
     // 2 4 6
 
@@ -67,7 +67,7 @@ int main () {
 
 
 
-    // String (array of characters)
+    // String (array of characters), menampilkan semua karakter dalam string dengan loop
     // string nama = "Kiel";
     // cout << nama[0] << endl;
     // cout << nama[2] << endl;
@@ -76,28 +76,32 @@ int main () {
     //     cout << nama[i] << endl;
     // }
     
-
+    // operasi dasar string
     // string s1 = "Hello"; 
     // string s2 = "World"; 
 
     /* 1. s1 = s2 */
+    //  menyalin isi s2 ke s1
     // s1 = s2;
     // cout << "s1 = " << s1 << endl;
 
     /* 2. s1 = s1 + s2 */
+    // menggabungkan string s1 dan s2
     // s1 = "Hello";  // reset nilai di s1
     // cout << "Hasil : " << s1 + s2 << endl;
 
     /* 3. s1. length() */
+    // menghitung panjang string
     // cout << s1.length() << endl;
     // cout << (s1 + s2).length() << endl;
 
     /* 4. s1.substr(n, m) */
+    // mengambil sebagian string
     // cout << s1.substr(2, 3) << endl;
     // cout << (s1 + s2).substr(5, 3) << endl;
 
 
-    // Operator sizeof
+    // Operator sizeof, untuk mengetahui ukuran memori yang digunakan
     // int angka = 10; 
     // cout << sizeof(angka);
 
@@ -109,6 +113,7 @@ int main () {
 
 
     // Array library
+    // array dengan elemen bertipe float, menggunakan library <array>
     // array<float, 5> nilai = {87.5, 90, 100, 95.7, 78.3};
     // cout << "Nilai : ";
 
@@ -116,7 +121,7 @@ int main () {
     //     cout << nilai[i] << " ";
     // }
 
-    // for (float n : nilai) {
+    // for (float n : nilai) { //  Menampilkan elemen dengan for-each (lebih sederhana)
     //     cout << n << " ";
     // }
 }
